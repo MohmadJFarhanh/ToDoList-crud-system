@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../1924537.jpg);
+    background-size: 100% 100vh ;
+    background-repeat: no-repeat;
+}
+ul li {
+    list-style-type: none;
+}
+.main {
+    background-color: #000000a8;
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+     margin: 100px auto;
+     padding: 20px;
+     border-radius: 6px;
+     position: relative;
+     
+}
+.toDoList {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+label {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+.toDoList input {
+    background-color: transparent;
+    border: none;
+    border-Top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    color: white;
+    text-indent: 20px;
+    font-size: 20px;
+    transition: 2s;
+    
+}
+
+.toDoList button {
+    background-color: transparent;
+    border: 4px solid white;
+    height: 40px;
+    width: 40%;
+    color: white;
+    font-size: 20px;
+}
+.toDoList button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 80px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#time {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+
+}
+#time:hover {
+    color: black;
+    background-color: white;
+}
+
+/* here for table today list */
+.today {
+    background-color: #000000a8;
+    border: 2px solid black;
+    width: 600px;
+    min-height: 300px;
+     margin: 0px auto;
+     padding: 10px;
+     border-radius: 6px;
+}
+.today h2 {
+    text-align: center;
+    color: white;
+}
+
+.today ul li {
+    font-size: 30px;
+    color: white;
+    list-style-type: none;
+    padding-left: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.today ul li::before {
+  
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background-color: white;
+    left: 16px;
+    transform: rotate(45deg);
+    top: 11px;
+
+   
+}
+
+.today ul li::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    background-color: white;
+    left: 16px;
+    top: 11px;
+    transform: rotate(-45deg);
+}
+.today ul li:hover::after {
+    background-color: red;
+}
+.today ul li:hover::before {
+    background-color: red;
+}
+.edit,
+#done {
+    width: 131px;
+    height: 31px;
+    background: white;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.edit:hover,
+#done:hover {
+    background-color: black;
+    color: white;
+}
+#delete {
+    top: 7px;
+    position: absolute;
+    cursor: pointer;
+    left: 7px;
+    height: 25px;
+    width: 21px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+
+.dropdown {
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 40px;
+}
+.dropdown label {
+    color: black;
+    padding: 4px 40px;
+    cursor: pointer;
+
+}
+.dropdown:hover .menu {
+    display: inline-block;
+}
+.menu {
+    background-color: black;
+    height: 100px;
+    color: white;
+    overflow-y: scroll;
+    display: none;
+    width: 100%;
+
+   
+}
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+
+}
+.menu ul li  {
+    width: 100%;
+
+}
+.menu ul li button{
+    width: 100%;
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(255,255,255);
+    padding: 7px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.menu ul li button:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+   display: flex;
+justify-content: center;
+}
+#editIn {
+    background-color: transparent;
+    border:none;
+    border-bottom: 3px solid white;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    width: 150px;
+}
